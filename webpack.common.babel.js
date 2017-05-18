@@ -20,6 +20,10 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
         test: /\.(jpg|png|gif)$/,
         use: 'file-loader',
       },
@@ -49,6 +53,12 @@ module.exports = {
     ],
   },
 
+  resolve: {
+    alias: {
+      jquery: path.join(__dirname, 'node_modules/jquery/dist/jquery'),
+    },
+  },
+
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
@@ -62,6 +72,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'app/index.html',
       chunksSortMode: 'dependency',
+    }),
+
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.$': 'jquery',
+      'window.jQuery': 'jquery',
     }),
   ],
 };

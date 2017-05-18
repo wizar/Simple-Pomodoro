@@ -4,6 +4,6 @@ import CommonConfig from './webpack.common.babel.js';
 
 module.exports = function () {
   return Merge(CommonConfig, {
-    devtool: 'cheap-eval-source-map',
+    devtool: 'source-map',
   });
 };

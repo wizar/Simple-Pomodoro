@@ -1,11 +1,26 @@
 <html ng-app="app">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body class="grey darken-4">
 
+<body class="grey darken-4">
+    <div class="title grey darken-3">
+        <h3 class="orange-text text-lighten-2 center-align">Simple Pomodoro</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <pt-nav></pt-nav>
+        </div>
+
+        <div class="row">
+            <ui-view></ui-view>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 </body>
+
 </html>
