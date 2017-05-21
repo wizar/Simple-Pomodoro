@@ -6,6 +6,27 @@ function initActions(appDispatcher) {
         payload: newSettings,
       });
     },
+
+    startWorkSession() {
+      appDispatcher.dispatch({
+        type: 'START_WORK',
+      });
+    },
+    stopWorkSession() {
+      appDispatcher.dispatch({
+        type: 'STOP_WORK',
+      });
+    },
+    startBreak() {
+      appDispatcher.dispatch({
+        type: 'START_BREAK',
+      });
+    },
+    endBreak() {
+      appDispatcher.dispatch({
+        type: 'END_BREAK',
+      });
+    },
   };
 }
 
