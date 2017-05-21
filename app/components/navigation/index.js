@@ -1,3 +1,4 @@
+import navStyles from './navigation-styles.scss';
 import navComponent from './navigation.component.js';
 
 import angular from 'angular';
