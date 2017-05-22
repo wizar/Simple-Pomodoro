@@ -1,0 +1,6 @@
+<div class="buttons">
+    <a class="btn-flat col s12 grey-text" ng-show="mdl.state == 'BREAK_END'" ng-click="$ctrl.startSession()">Start session</a>
+    <a class="btn-flat col s12 grey-text" ng-show="mdl.state == 'WORK_IN_PROGRESS'" ng-click="$ctrl.stopSession()">Stop session</a>
+    <a class="btn-flat col s12 grey-text" ng-show="mdl.state == 'WORK_END'" ng-click="$ctrl.startBreak()">Start break</a>
+    <a class="btn-flat col s12 grey-text" ng-show="mdl.state =='BREAK_IN_PROGRESS' || mdl.state == 'LONG_BREAK_IN_PROGRESS'" ng-click="$ctrl.stopBreak()">Stop break</a>
+</div>

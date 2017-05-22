@@ -1,8 +1,10 @@
+import timerPage from '../../pages/timer.html';
+
 export default [
   {
     name: 'timer',
     url: '/timer',
-    template: '',
+    template: timerPage,
   },
   {
     name: 'settings',
