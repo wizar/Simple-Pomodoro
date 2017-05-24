@@ -1,0 +1,20 @@
+.timer-wrapper {
+    pointer-events: none;
+    position: relative;
+    width: 400px;
+
+    .time {
+        position: absolute;
+        top: calc(50% - 30px);
+        left: calc(50% - 55px);
+    }
+    svg {
+        &.break #arc {
+            fill: green;
+        }
+
+        &.session #arc {
+            fill: red;
+        }
+    }
+}

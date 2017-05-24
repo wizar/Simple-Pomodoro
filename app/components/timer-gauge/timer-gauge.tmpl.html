@@ -1,0 +1,4 @@
+<div class="timer-wrapper">
+    <svg width="400" height="250" ng-class="$ctrl.state == 'BREAK_IN_PROGRESS' ? 'break' : 'session'"></svg>
+    <h3 class="time grey-text" ng-bind="$ctrl.time | millisecondsToString"></h3>
+</div>
